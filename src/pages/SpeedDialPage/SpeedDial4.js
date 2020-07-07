@@ -20,10 +20,8 @@ const SpeedDial4 = () => {
   const iconGroupDirection = "up";
   const iconWidth = 100;
   const iconHeight = 100;
-  const iconSpaceBetween = 1;
   const switchIconHoverColor = "skyblue";
   const switchIconRotateAngle = 180;
-  const iconHoverColor = "skyblue";
   const iconHoverRadius = 1;
   const isToggleSwitchColorStay = false;
 
@@ -36,10 +34,8 @@ const SpeedDial4 = () => {
         iconGroupDirection={iconGroupDirection}
         iconWidth={iconWidth}
         iconHeight={iconHeight}
-        iconSpaceBetween={iconSpaceBetween}
         switchIconHoverColor={switchIconHoverColor}
         switchIconRotateAngle={switchIconRotateAngle}
-        iconHoverColor={iconHoverColor}
         iconHoverRadius={iconHoverRadius}
         isToggleSwitchColorStay={isToggleSwitchColorStay}
       />

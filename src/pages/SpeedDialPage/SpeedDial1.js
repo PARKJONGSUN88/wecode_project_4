@@ -12,7 +12,7 @@ const SpeedDial1 = () => {
     { url: "/2", icon: <Icon2 /> },
     { url: "/3", icon: <Icon3 /> },
   ];
-  const iconGroupDirection = "up";
+  const iconGroupDirection = "right";
   const switchIconHoverColor = "green";
   const iconHoverColor = "green";
   const isSwitchIconRotate = false;

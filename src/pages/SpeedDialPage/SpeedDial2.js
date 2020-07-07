@@ -21,7 +21,8 @@ const SpeedDial2 = () => {
   };
   const iconGroupDirection = "left";
   const switchIconHoverColor = "blue";
-  const iconHoverColor = "blue";
+  const iconHoverColor = "red";
+  const iconSpaceBetween = 100;
   const iconWidth = 100;
   const iconHeight = 100;
 
@@ -36,6 +37,7 @@ const SpeedDial2 = () => {
         iconHoverColor={iconHoverColor}
         iconWidth={iconWidth}
         iconHeight={iconHeight}
+        iconSpaceBetween={iconSpaceBetween}
       />
     </>
   );

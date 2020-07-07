@@ -7,7 +7,7 @@ const SwitchIcon2 = () => {
     <IconContext.Provider
       value={{
         size: "100%",
-        color: "pink",
+        color: "blue",
         style: { cursor: "pointer" },
       }}
     >
