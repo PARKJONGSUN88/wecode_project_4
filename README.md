@@ -39,10 +39,10 @@ https://material-ui.com/api/에서 해당하는 UI가 어떤 일을 하는 UI인
 
 #### 
 <img width="1280" alt="before" src="https://user-images.githubusercontent.com/50945715/86708974-6dca9400-c054-11ea-8575-be2bf9346bd1.png">
-![1](https://user-images.githubusercontent.com/50945715/86708978-6f945780-c054-11ea-8deb-9753c48a132c.gif)
-![2](https://user-images.githubusercontent.com/50945715/86708979-6f945780-c054-11ea-8a34-dc6d547bd09d.gif)
-![3](https://user-images.githubusercontent.com/50945715/86708984-702cee00-c054-11ea-802a-4b495de828b7.gif)
-![4](https://user-images.githubusercontent.com/50945715/86708985-70c58480-c054-11ea-98fe-ad722d7d656a.gif)
+<img width="1280" alt="1" src="https://user-images.githubusercontent.com/50945715/86708978-6f945780-c054-11ea-8deb-9753c48a132c.gif">
+<img width="1280" alt="2" src="https://user-images.githubusercontent.com/50945715/86708979-6f945780-c054-11ea-8a34-dc6d547bd09d.gif">
+<img width="1280" alt="3" src="https://user-images.githubusercontent.com/50945715/86708984-702cee00-c054-11ea-802a-4b495de828b7.gif">
+<img width="1280" alt="4" src="https://user-images.githubusercontent.com/50945715/86708985-70c58480-c054-11ea-98fe-ad722d7d656a.gif">
 
 #### story..
 
