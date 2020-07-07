@@ -37,11 +37,12 @@ https://material-ui.com/api/에서 해당하는 UI가 어떤 일을 하는 UI인
 | iconHoverRadius         | 100 // 0 ~                                                   | icon에 hover 했을때 icon의 배경테두리 / 클수록 원, 작으면 사각형이 된다. | number  |
 | isToggleSwitchColorStay | true                                                         | toggle이 유지되는 동안 switch에 배경색을 유지할 것인지, switch에 hover시에만 배경색을 유지할 것인지 | boolean |
 
-#### 비활성화
-<img width="1264" alt="비활성화" src="https://user-images.githubusercontent.com/50945715/86593750-c5272080-bfd0-11ea-9600-869b6295c768.png">
-
-#### 활성화
-<img width="1276" alt="활성화" src="https://user-images.githubusercontent.com/50945715/86593753-c6584d80-bfd0-11ea-9ba2-bf130c529413.png">
+#### 
+<img width="1280" alt="before" src="https://user-images.githubusercontent.com/50945715/86708974-6dca9400-c054-11ea-8575-be2bf9346bd1.png">
+![1](https://user-images.githubusercontent.com/50945715/86708978-6f945780-c054-11ea-8deb-9753c48a132c.gif)
+![2](https://user-images.githubusercontent.com/50945715/86708979-6f945780-c054-11ea-8a34-dc6d547bd09d.gif)
+![3](https://user-images.githubusercontent.com/50945715/86708984-702cee00-c054-11ea-802a-4b495de828b7.gif)
+![4](https://user-images.githubusercontent.com/50945715/86708985-70c58480-c054-11ea-98fe-ad722d7d656a.gif)
 
 #### story..
 
