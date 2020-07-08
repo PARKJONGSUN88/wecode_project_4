@@ -1,10 +1,10 @@
-## Speed Dial
+ ## Rating
 
-React로 재사용이 가능한 UI 컴포넌트를 만들고자 한다.
+  React로 재사용이 가능한 UI 컴포넌트를 만들고자 한다.
 
-재사용이 가능하게, 나만 사용하는 것이  아닌 남들에게 배포한다는 생각으로 만들어 본다.
+  재사용이 가능하게, 나만 사용하는 것이  아닌 남들에게 배포한다는 생각으로 만들어 본다.
 
-
+  
 
 | props name              | default 내용 및 타입 // 사용 예시                            | 기능(설명)                                                   | type    |
 | :---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------- |
@@ -31,39 +31,28 @@ React로 재사용이 가능한 UI 컴포넌트를 만들고자 한다.
 
 ### 예시
 
-#### 전체
-<img width="1280" alt="before" src="https://user-images.githubusercontent.com/50945715/86708974-6dca9400-c054-11ea-8575-be2bf9346bd1.png">
-
 #### 1
-<img width="1280" alt="1" src="https://user-images.githubusercontent.com/50945715/86708978-6f945780-c054-11ea-8deb-9753c48a132c.gif">
+<img width="572" alt="gif1" src="https://user-images.githubusercontent.com/50945715/86902352-cda26700-c148-11ea-821d-0bd1b22708e5.gif">
 
 #### 2
-<img width="1280" alt="2" src="https://user-images.githubusercontent.com/50945715/86708979-6f945780-c054-11ea-8a34-dc6d547bd09d.gif">
+<img width="572" alt="gif2" src="https://user-images.githubusercontent.com/50945715/86902354-ce3afd80-c148-11ea-9269-791b578aed26.gif">
 
 #### 3
-<img width="1280" alt="3" src="https://user-images.githubusercontent.com/50945715/86708984-702cee00-c054-11ea-802a-4b495de828b7.gif">
+<img width="572" alt="gif2" src="https://user-images.githubusercontent.com/50945715/86902357-ced39400-c148-11ea-8f38-e7da23729e20.gif">
 
 #### 4
-<img width="1280" alt="4" src="https://user-images.githubusercontent.com/50945715/86708985-70c58480-c054-11ea-98fe-ad722d7d656a.gif">
+<img width="572" alt="gif2" src="https://user-images.githubusercontent.com/50945715/86902359-ced39400-c148-11ea-9af9-b4778a40e166.gif">
 
+#### 5
+<img width="572" alt="gif2" src="https://user-images.githubusercontent.com/50945715/86902362-cf6c2a80-c148-11ea-8b24-b78c25828e0a.gif">
 
+#### 6
+<img width="572" alt="gif2" src="https://user-images.githubusercontent.com/50945715/86902364-cf6c2a80-c148-11ea-8702-5770370cac69.gif">
+
+#### 7
+<img width="572" alt="gif2" src="https://user-images.githubusercontent.com/50945715/86902367-d004c100-c148-11ea-8bb6-6309fc2f43c8.gif">
 
 ### story..
 
-- 원래는 React-Native, Typescript로 적용할 예정이었으나 아직은 React, js이다.
-
-  https://material-ui.com/api/에서 해당하는 UI가 어떤 일을 하는 UI인지만 확인하고 로직은 스스로 작성한다.
-
   
 
-- 20.07.06 - 1차로 js, react버전 완료.. (+ 디버깅 완료)
-
-  만들다보니 props만 21개나 제공하도록 만들었다...ㅋㅋ 
-
-  keyframe animation에서 props가 전이되는 것인지 오염되는 것인지 다른 컴포넌트한테도 전달되는 현상이 있어서 수정하였다. 똑같은 방식으로 props를 사용하여 styled컴포넌트에서 css를 그때 그때 바꾸도록 하였는데 keyframe만 그런 현상이 발견되어 수정하였다.
-
-  <br>
-  
-  참고 : https://material-ui.com/api/speed-dial/
-  
-  검색 도움 : https://stackoverflow.com/questions/50802681/how-to-pass-props-to-keyframes-in-styled-component-with-react

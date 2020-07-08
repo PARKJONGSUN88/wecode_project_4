@@ -1,8 +1,12 @@
 ## React Component - js UI
 
+**Project. JS(종선) UI** ... ui컴포넌트 만들기이다.
+
+재사용이 가능하게, 나만 사용하는 것이  아닌 남들에게 배포한다는 생각으로 만들어 본다.
 
 
-### 1. Speed Dial
+
+#### 1. Speed Dial
 
 https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/src/components/SpeedDial
 
@@ -10,4 +14,4 @@ https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/src/components/Spe
 
 
 
-### 2. Rating
+#### 2. Rating
