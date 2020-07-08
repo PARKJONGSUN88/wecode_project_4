@@ -1,4 +1,4 @@
-### 이곳은 icon 예시를 위한 icon모음 폴더입니다
+### 이곳은 component page에서 UI예시를 위한 icon모음 폴더입니다
 
 
 
