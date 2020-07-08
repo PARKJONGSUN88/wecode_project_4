@@ -7,7 +7,7 @@ import Icon5 from "../../components/Icons/Icon5";
 import Icon6 from "../../components/Icons/Icon6";
 
 const SpeedDial4 = () => {
-  const switchIcon = <SwitchIcon2 />;
+  const switchIcon = <Icon5 />;
   const iconList = [
     { url: "/3", icon: <Icon3 /> },
     { url: "/4", icon: <Icon4 /> },

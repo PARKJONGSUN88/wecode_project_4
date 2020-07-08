@@ -21,35 +21,6 @@ const SpeedDialPage = () => {
             컴포넌트별 icon클릭 함수도 확인해보세요.
           </div>
         </div>
-        <div className="sample1 sample">
-          1번 UI // 적용Props
-          <br />
-          <br />
-          iconGroupDirection: "right" / switchRotate: false /
-          switchIconHoverColor: "green" / iconHoverColor: "green"
-        </div>
-        <div className="sample2 sample">
-          2번 UI // 적용Props
-          <br />
-          <br />
-          iconGroupDirection: "left" / iconWidth: 100 / iconHeight: 100 /
-          switchIconHoverColor: "blue" / iconHoverColor: "red" /
-          iconSpaceBetween: 100
-        </div>
-        <div className="sample3 sample">
-          3번 UI // 적용Props
-          <br />
-          <br />
-          적용된 props가 없는 ddefaultProps 상태입니다.
-        </div>
-        <div className="sample4 sample">
-          4번 UI // 적용Props
-          <br />
-          <br />
-          iconGroupDirection: "up" / iconWidth: 100 / iconHeight: 100 /
-          switchIconHoverColor: "skyblue" / switchIconRotateAngle: 180 /
-          iconHoverRadius: 1 / isToggleSwitchColorStay: false
-        </div>
       </Background>
       <Contents>
         <div className="cover1 cover">
@@ -72,9 +43,6 @@ const SpeedDialPage = () => {
 export default SpeedDialPage;
 
 const Background = styled.div`
-  width: 100%;
-  height: 200vh;
-  background-color: rgba(181, 181, 181, 0.3);
   .center {
     position: fixed;
     top: 5%;
@@ -82,33 +50,9 @@ const Background = styled.div`
     display: flex;
     justify-content: center;
     & > div {
-      background-color: blue;
-      color: white;
       width: 400px;
       height: 150px;
     }
-  }
-  .sample {
-    position: absolute;
-    border: 1px solid gray;
-    width: 400px;
-    height: 150px;
-  }
-  .sample1 {
-    top: 25%;
-    left: 5%;
-  }
-  .sample2 {
-    top: 25%;
-    right: 5%;
-  }
-  .sample3 {
-    bottom: 25%;
-    left: 5%;
-  }
-  .sample4 {
-    bottom: 25%;
-    right: 5%;
   }
 `;
 
@@ -117,19 +61,19 @@ const Contents = styled.div`
     position: fixed;
   }
   .cover1 {
-    top: 15%;
-    left: 15%;
+    top: 25%;
+    left: 5%;
   }
   .cover2 {
-    top: 15%;
-    right: 15%;
+    top: 40%;
+    left: 50%;
   }
   .cover3 {
-    bottom: 15%;
-    left: 15%;
+    top: 60%;
+    left: 20%;
   }
   .cover4 {
-    bottom: 15%;
-    right: 15%;
+    top: 80%;
+    left: 80%;
   }
 `;
