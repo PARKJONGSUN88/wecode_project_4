@@ -11,7 +11,8 @@ const SpeedDialPage = () => {
       <Background onClick={() => console.log("배경")}>
         <div className="center">
           <div>
-            UI 컴포넌트 적용된 sample입니다.
+            UI 컴포넌트 // SpeedDial
+            <br />
             <br />
             배경이 클릭될시 console을 확인해보세요!
             <br />
@@ -20,14 +21,14 @@ const SpeedDialPage = () => {
             컴포넌트별 icon클릭 함수도 확인해보세요.
           </div>
         </div>
-        <div className="sample1 ui">
+        <div className="sample1 sample">
           1번 UI // 적용Props
           <br />
           <br />
           iconGroupDirection: "right" / switchRotate: false /
           switchIconHoverColor: "green" / iconHoverColor: "green"
         </div>
-        <div className="sample2 ui">
+        <div className="sample2 sample">
           2번 UI // 적용Props
           <br />
           <br />
@@ -35,13 +36,13 @@ const SpeedDialPage = () => {
           switchIconHoverColor: "blue" / iconHoverColor: "red" /
           iconSpaceBetween: 100
         </div>
-        <div className="sample3 ui">
+        <div className="sample3 sample">
           3번 UI // 적용Props
           <br />
           <br />
           적용된 props가 없는 ddefaultProps 상태입니다.
         </div>
-        <div className="sample4 ui">
+        <div className="sample4 sample">
           4번 UI // 적용Props
           <br />
           <br />
@@ -50,18 +51,20 @@ const SpeedDialPage = () => {
           iconHoverRadius: 1 / isToggleSwitchColorStay: false
         </div>
       </Background>
-      <Cover1>
-        <SpeedDail1 />
-      </Cover1>
-      <Cover2>
-        <SpeedDail2 />
-      </Cover2>
-      <Cover3>
-        <SpeedDail3 />
-      </Cover3>
-      <Cover4>
-        <SpeedDail4 />
-      </Cover4>
+      <Contents>
+        <div className="cover1 cover">
+          <SpeedDail1 />
+        </div>
+        <div className="cover2 cover">
+          <SpeedDail2 />
+        </div>
+        <div className="cover3 cover">
+          <SpeedDail3 />
+        </div>
+        <div className="cover4 cover">
+          <SpeedDail4 />
+        </div>
+      </Contents>
     </>
   );
 };
@@ -69,14 +72,25 @@ const SpeedDialPage = () => {
 export default SpeedDialPage;
 
 const Background = styled.div`
-  position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   background-color: rgba(181, 181, 181, 0.3);
-  .ui {
+  .center {
+    position: fixed;
+    top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    & > div {
+      background-color: blue;
+      color: white;
+      width: 400px;
+      height: 150px;
+    }
+  }
+  .sample {
     position: absolute;
-    background-color: black;
-    color: yellow;
+    border: 1px solid gray;
     width: 400px;
     height: 150px;
   }
@@ -96,39 +110,26 @@ const Background = styled.div`
     bottom: 25%;
     right: 5%;
   }
-  .center {
+`;
+
+const Contents = styled.div`
+  .cover {
     position: fixed;
-    top: 5%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    & > div {
-      background-color: black;
-      color: yellow;
-      width: 400px;
-      height: 100px;
-    }
   }
-`;
-
-const Cover1 = styled.div`
-  position: fixed;
-  top: 15%;
-  left: 15%;
-`;
-
-const Cover2 = styled.div`
-  position: fixed;
-  top: 15%;
-  right: 15%;
-`;
-const Cover3 = styled.div`
-  position: fixed;
-  bottom: 15%;
-  left: 15%;
-`;
-const Cover4 = styled.div`
-  position: fixed;
-  bottom: 15%;
-  right: 15%;
+  .cover1 {
+    top: 15%;
+    left: 15%;
+  }
+  .cover2 {
+    top: 15%;
+    right: 15%;
+  }
+  .cover3 {
+    bottom: 15%;
+    left: 15%;
+  }
+  .cover4 {
+    bottom: 15%;
+    right: 15%;
+  }
 `;

@@ -16,7 +16,7 @@ const SpeedDial2 = () => {
     { url: "/4", icon: <Icon4 /> },
     { url: "/5", icon: <Icon5 /> },
   ];
-  const iconClickHandler = (e) => {
+  const iconClickHandler = () => {
     console.log("2번 컴포넌트 작동중입니다");
   };
   const iconGroupDirection = "left";

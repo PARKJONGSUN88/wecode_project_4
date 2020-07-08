@@ -2,13 +2,13 @@ import React from "react";
 import { DiApple } from "react-icons/di";
 import { IconContext } from "react-icons";
 
-const Icon2 = () => {
+const Icon2 = (props) => {
   return (
     <IconContext.Provider
       value={{
-        size: "70%",
-        color: "red",
-        style: { cursor: "pointer" }
+        size: "100%",
+        color: `${props.color}`,
+        style: { cursor: "pointer" },
       }}
     >
       <DiApple />
@@ -17,3 +17,7 @@ const Icon2 = () => {
 };
 
 export default Icon2;
+
+Icon2.defaultProps = {
+  color: "red",
+};

@@ -7,8 +7,8 @@ const SwitchIcon1 = () => {
     <IconContext.Provider
       value={{
         size: "100%",
-        color: "black",
-        style: { cursor: "pointer" }
+        color: "green",
+        style: { cursor: "pointer" },
       }}
     >
       <IoIosAddCircle />
