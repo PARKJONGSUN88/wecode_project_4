@@ -15,3 +15,9 @@ https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/src/components/Spe
 
 
 #### 2. Rating
+
+https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/src/components/Rating
+
+<img width="1280" alt="gif2" src="https://user-images.githubusercontent.com/50945715/86902364-cf6c2a80-c148-11ea-8702-5770370cac69.gif">
+
+<img width="1280" alt="gif2" src="https://user-images.githubusercontent.com/50945715/86902354-ce3afd80-c148-11ea-9269-791b578aed26.gif">
