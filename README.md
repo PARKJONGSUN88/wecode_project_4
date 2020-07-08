@@ -8,15 +8,18 @@
 
 #### 1. Speed Dial
 
-https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/src/components/SpeedDial
+
+https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/src/pages/SpeedDialPage
 
 <img width="1280" alt="2" src="https://user-images.githubusercontent.com/50945715/86909149-9d5fc600-c152-11ea-8464-aa909e56d8d0.gif">
+
+
 
 <br>
 
 #### 2. Rating
 
-https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/src/components/Rating
+https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/src/pages/RatingPage
 
 <img width="1280" alt="gif2" src="https://user-images.githubusercontent.com/50945715/86902364-cf6c2a80-c148-11ea-8702-5770370cac69.gif">
 
