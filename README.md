@@ -13,7 +13,7 @@ https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/src/pages/SpeedDia
 
 <img width="1280" alt="2" src="https://user-images.githubusercontent.com/50945715/86909149-9d5fc600-c152-11ea-8464-aa909e56d8d0.gif">
 
-
+<img width="1280" alt="3" src="https://user-images.githubusercontent.com/50945715/86909150-9d5fc600-c152-11ea-93a8-49a3289093a0.gif">
 
 <br>
 
