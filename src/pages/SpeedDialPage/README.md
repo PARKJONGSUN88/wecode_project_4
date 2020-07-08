@@ -18,7 +18,7 @@
 
 **적용 props:**  default 상태
 
-<img width="1280" alt="3" src="https://user-images.githubusercontent.com/50945715/86909150-9d5fc600-c152-11ea-93a8-49a3289093a0.gif">
+<img width="1280" style="border:black 1px solid"  alt="3" src="https://user-images.githubusercontent.com/50945715/86909150-9d5fc600-c152-11ea-93a8-49a3289093a0.gif">
 
 <br>
 
@@ -28,7 +28,7 @@
 
 **iconGroupDirection: "right" / switchRotate: false /  switchIconHoverColor: "green" / iconHoverColor: "green"**
 
-<img width="1280" alt="1" src="https://user-images.githubusercontent.com/50945715/86909147-9c2e9900-c152-11ea-835f-37851d464157.gif">
+<img width="1280" style="border:black 1px solid"  alt="1" src="https://user-images.githubusercontent.com/50945715/86909147-9c2e9900-c152-11ea-835f-37851d464157.gif">
 
 <br>
 
@@ -38,7 +38,7 @@
 
 **iconGroupDirection: "right" / switchRotate: false /  switchIconHoverColor: "green" / iconHoverColor: "green"**
 
-<img width="1280" alt="2" src="https://user-images.githubusercontent.com/50945715/86909149-9d5fc600-c152-11ea-8464-aa909e56d8d0.gif">
+<img width="1280" style="border:black 1px solid"  alt="2" src="https://user-images.githubusercontent.com/50945715/86909149-9d5fc600-c152-11ea-8464-aa909e56d8d0.gif">
 
 <br>
 
@@ -48,7 +48,7 @@
 
 **iconGroupDirection: "right" / switchRotate: false /  switchIconHoverColor: "green" / iconHoverColor: "green"**
 
-<img width="1280" alt="4" src="https://user-images.githubusercontent.com/50945715/86909153-9df85c80-c152-11ea-9e43-cb277aea236d.gif">
+<img width="1280" style="border:black 1px solid"  alt="4" src="https://user-images.githubusercontent.com/50945715/86909153-9df85c80-c152-11ea-9e43-cb277aea236d.gif">
 
 
 
