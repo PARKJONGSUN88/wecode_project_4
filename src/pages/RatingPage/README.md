@@ -30,3 +30,6 @@ doc: https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/src/component
 
 #### 7. right방향, up방향으로 사용
 <img width="1280" style="border:black 1px solid" alt="gif2" src="https://user-images.githubusercontent.com/50945715/86902367-d004c100-c148-11ea-8bb6-6309fc2f43c8.gif">
+
+#### 8. isHover를 활성화 했을 경우
+<img width="1280" style="border:black 1px solid" alt="gif2" src="https://user-images.githubusercontent.com/50945715/87000804-dbabc280-c1f0-11ea-976a-8a48ec90d60f.gif">
