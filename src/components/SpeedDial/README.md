@@ -33,13 +33,15 @@ React로 재사용이 가능한 UI 컴포넌트를 만들고자 한다.
 
 ### story..
 
-- 원래는 React-Native, Typescript로 적용할 예정이었으나 아직은 React, js이다.
+- 20.07.06 : 
+
+  원래는 React-Native, Typescript로 적용할 예정이었으나 아직은 React, js이다.
 
   https://material-ui.com/api/에서 해당하는 UI가 어떤 일을 하는 UI인지만 확인하고 로직은 스스로 작성한다.
 
   
 
-- 20.07.06: 
+- 20.07.06 : 
 
   1차로 js, react버전 완료.. (+ 디버깅 완료)
 

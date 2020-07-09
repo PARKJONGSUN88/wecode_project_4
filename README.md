@@ -27,4 +27,4 @@ https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/src/pages/RatingPa
 
 <img width="1280" style="border:black 1px solid"  alt="gif2" src="https://user-images.githubusercontent.com/50945715/86902359-ced39400-c148-11ea-9af9-b4778a40e166.gif">
 
-<img width="1280" style="border:black 1px solid"  alt="gif2" src="https://user-images.githubusercontent.com/50945715/87000804-dbabc280-c1f0-11ea-976a-8a48ec90d60f.gif">
+<img width="1280" style="border:black 1px solid" alt="gif2" src="https://user-images.githubusercontent.com/50945715/87004271-1e24cd80-c1f8-11ea-9687-13ca36231dde.gif">
