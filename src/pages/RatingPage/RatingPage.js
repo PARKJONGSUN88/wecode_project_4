@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Rating from "../../components/Rating/Rating";
 import Icon1 from "../../components/Icons/Icon1";
 import Icon2 from "../../components/Icons/Icon2";
-import Icon3 from "../../components/Icons/Icon3";
+import Icon5 from "../../components/Icons/Icon5";
 
 const RatingPage = () => {
   return (
@@ -39,6 +39,58 @@ const RatingPage = () => {
           pick={<Icon2 color={"red"} />}
           pieceIsHalf={true}
           pickStyle={"background-color:skyblue;"}
+        />
+      </div>
+      <div className="cover">
+        <Rating
+          piece={<Icon5 color={"skyblue"} />}
+          pick={<Icon5 color={"blue"} />}
+          pieceCount={10}
+          pieceIsHalf={true}
+          pieceStyle={"background-color:gray;"}
+        />
+      </div>
+      <div className="cover">
+        <Rating
+          piece={<Icon5 color={"skyblue"} />}
+          pick={<Icon5 color={"blue"} />}
+          defaultPickCount={4}
+          pieceCount={10}
+          pieceIsHalf={true}
+          pieceStyle={"background-color:gray;"}
+        />
+      </div>
+      <div className="cover">
+        <Rating
+          piece={<Icon5 color={"white"} />}
+          pick={<Icon5 color={"blue"} />}
+          pieceCount={10}
+          pieceIsHalf={true}
+          isHover={true}
+          pieceStyle={"background-color:gray;"}
+        />
+      </div>
+      <div className="cover">
+        <Rating
+          piece={<Icon5 color={"white"} />}
+          pick={<Icon5 color={"blue"} />}
+          hover={<Icon5 color={"blue"} />}
+          pieceCount={10}
+          pieceIsHalf={true}
+          isHover={true}
+          pieceStyle={"background-color:gray;"}
+        />
+      </div>
+      <div className="cover">
+        <Rating
+          piece={<Icon5 color={"white"} />}
+          pick={<Icon5 color={"blue"} />}
+          hover={<Icon5 color={"skyblue"} />}
+          pieceCount={10}
+          pieceIsHalf={true}
+          isHover={true}
+          pieceStyle={"background-color:gray;"}
+          hoverStyle={"transform:scale(1.2);"}
         />
       </div>
       <div className="cover">

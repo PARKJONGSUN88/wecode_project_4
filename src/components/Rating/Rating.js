@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import styled, { css } from "styled-components";
 
 const Rating = (props) => {
-  const [pickedPieceIndex, setPickedPieceIndex] = useState(0);
+  const [pickedPieceIndex, setPickedPieceIndex] = useState(
+    props.defaultPickCount - 1
+  );
+  const [hoverPieceIndex, setHoverPieceIndex] = useState(-1);
 
   const pieceCount = [];
   for (let i = 0; i < props.pieceCount; i++) {
@@ -14,8 +17,16 @@ const Rating = (props) => {
     pickCount.push(props.pick);
   }
 
+  const hoverCount = [];
+  if (props.isHover) {
+    for (let i = 0; i < hoverPieceIndex + 1; i++) {
+      hoverCount.push(props.hover);
+    }
+  }
+
   const clickHandler = (click) => {
     setPickedPieceIndex(click);
+    setHoverPieceIndex(-1);
     props.clickHandler(click, pickedPieceIndex);
   };
 
@@ -24,6 +35,7 @@ const Rating = (props) => {
       pieceCount={props.pieceCount}
       pieceHeight={props.pieceHeight}
       pieceWidth={props.pieceWidth}
+      onMouseLeave={() => setHoverPieceIndex(-1)}
     >
       <PieceWrap
         direction={props.direction}
@@ -33,7 +45,11 @@ const Rating = (props) => {
         pieceStyle={props.pieceStyle}
       >
         {pieceCount.map((item, index) => (
-          <div key={index} onClick={() => clickHandler(index)}>
+          <div
+            key={index}
+            onMouseEnter={() => setHoverPieceIndex(index)}
+            onClick={() => clickHandler(index)}
+          >
             <div>{item}</div>
           </div>
         ))}
@@ -46,7 +62,28 @@ const Rating = (props) => {
         pickStyle={props.pickStyle}
       >
         {pickCount.map((item, index) => (
-          <div p key={index} onClick={() => clickHandler(index)}>
+          <div
+            key={index}
+            onMouseEnter={() => setHoverPieceIndex(index)}
+            onClick={() => clickHandler(index)}
+          >
+            <div>{item}</div>
+          </div>
+        ))}
+      </PieceWrap>
+      <PieceWrap
+        direction={props.direction}
+        pieceIsHalf={props.pieceIsHalf}
+        pieceHeight={props.pieceHeight}
+        pieceWidth={props.pieceWidth}
+        hoverStyle={props.hoverStyle}
+      >
+        {hoverCount.map((item, index) => (
+          <div
+            key={index}
+            onMouseEnter={() => setHoverPieceIndex(index)}
+            onClick={() => clickHandler(index)}
+          >
             <div>{item}</div>
           </div>
         ))}
@@ -61,6 +98,7 @@ Rating.defaultProps = {
   piece: "piece",
   pick: "pick",
   pieceCount: 4,
+  defaultPickCount: 1,
   pieceIsHalf: false,
   direction: "right",
   pieceHeight: 100,
@@ -68,6 +106,9 @@ Rating.defaultProps = {
   pieceStyle: null,
   pickStyle: null,
   clickHandler: (click, index) => console.log("click:", click, "index:", index),
+  isHover: false,
+  hover: "hover",
+  hoverStyle: null,
 };
 
 const Warp = styled.div`
@@ -91,6 +132,13 @@ const PieceWrap = styled.div`
     overflow: hidden;
     height: ${(props) => props.pieceHeight}px;
     width: ${(props) => props.pieceWidth}px;
+    ${(props) => {
+      if (props.hoverStyle !== null) {
+        return css`
+          ${props.hoverStyle}
+        `;
+      }
+    }}
     & > div {
       height: 100%;
       width: 100%;
@@ -100,6 +148,7 @@ const PieceWrap = styled.div`
       align-items: center;
     }
   }
+
   & > div:nth-child(odd) {
     & > div {
       transform: ${(props) => {

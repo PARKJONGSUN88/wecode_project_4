@@ -2,13 +2,13 @@ import React from "react";
 import { DiPython } from "react-icons/di";
 import { IconContext } from "react-icons";
 
-const Icon5 = () => {
+const Icon5 = (props) => {
   return (
     <IconContext.Provider
       value={{
-        size: "70%",
-        color: "blue",
-        style: { cursor: "pointer" }
+        size: "100%",
+        color: `${props.color}`,
+        style: { cursor: "pointer" },
       }}
     >
       <DiPython />
@@ -17,3 +17,7 @@ const Icon5 = () => {
 };
 
 export default Icon5;
+
+Icon5.defaultProps = {
+  color: "black",
+};

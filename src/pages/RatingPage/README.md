@@ -30,3 +30,9 @@
 
 #### 7. right방향, up방향으로 사용
 <img width="1280" style="border:black 1px solid" alt="gif2" src="https://user-images.githubusercontent.com/50945715/86902367-d004c100-c148-11ea-8bb6-6309fc2f43c8.gif">
+
+#### 8. defaultPickCount 값을 추가하여 초기 picked 갯수 설정
+<img width="1280" style="border:black 1px solid" alt="gif2" src="https://user-images.githubusercontent.com/50945715/87004263-1cf3a080-c1f8-11ea-9aec-91b1fd6526e7.gif">
+
+#### 9. ishover 값을 활성화하여 사용할 경우
+<img width="1280" style="border:black 1px solid" alt="gif2" src="https://user-images.githubusercontent.com/50945715/87004271-1e24cd80-c1f8-11ea-9687-13ca36231dde.gif">

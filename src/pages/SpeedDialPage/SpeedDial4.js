@@ -1,6 +1,5 @@
 import React from "react";
 import SpeedDial from "../../components/SpeedDial/SpeedDial";
-import SwitchIcon2 from "../../components/Icons/SwitchIcon2";
 import Icon3 from "../../components/Icons/Icon3";
 import Icon4 from "../../components/Icons/Icon4";
 import Icon5 from "../../components/Icons/Icon5";

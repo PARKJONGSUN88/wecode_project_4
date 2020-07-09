@@ -39,12 +39,14 @@ React로 재사용이 가능한 UI 컴포넌트를 만들고자 한다.
 
   
 
-- 20.07.06 - 1차로 js, react버전 완료.. (+ 디버깅 완료)
+- 20.07.06: 
+
+  1차로 js, react버전 완료.. (+ 디버깅 완료)
 
   만들다보니 props만 21개나 제공하도록 만들었다...ㅋㅋ 
 
   keyframe animation에서 props가 전이되는 것인지 오염되는 것인지 다른 컴포넌트한테도 전달되는 현상이 있어서 수정하였다. 똑같은 방식으로 props를 사용하여 styled컴포넌트에서 css를 그때 그때 바꾸도록 하였는데 keyframe만 그런 현상이 발견되어 수정하였다.
-
+  
   <br>
   
   참고 : https://material-ui.com/api/speed-dial/
