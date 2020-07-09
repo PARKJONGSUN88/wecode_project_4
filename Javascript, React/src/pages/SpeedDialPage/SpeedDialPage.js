@@ -14,11 +14,9 @@ const SpeedDialPage = () => {
   return (
     <>
       <Background onClick={() => console.log("배경")}>
+        <h1>Speed Dial Page입니다.</h1>
         <div className="center">
           <div>
-            UI 컴포넌트 // SpeedDial
-            <br />
-            <br />
             배경이 클릭될시 console을 확인해보세요!
             <br />
             UI 컴포넌트가 활성화되면 배경이 클릭되지 않습니다.
@@ -29,6 +27,8 @@ const SpeedDialPage = () => {
       </Background>
       <Contents>
         <div className="cover1 cover">
+          <h3>- 컴포넌트 방향 및 색상이 적용 /</h3>
+          <h3>실행버튼의 회전이 비활성화</h3>
           <SpeedDial
             switchIcon={<SwitchIcon2 />}
             iconList={[
@@ -43,6 +43,9 @@ const SpeedDialPage = () => {
           />
         </div>
         <div className="cover2 cover">
+          <h3>- 버튼 및 아이콘 크기 조절(up) /</h3>
+          <h3>사용자 커스텀 함수 적용 /</h3>
+          <h3>아이콘간 간격 조절(up)</h3>
           <SpeedDial
             switchIcon={<SwitchIcon1 />}
             iconList={[
@@ -61,6 +64,7 @@ const SpeedDialPage = () => {
           />
         </div>
         <div className="cover3 cover">
+          <h3>- default 상태</h3>
           <SpeedDial />
         </div>
         <div className="cover4 cover">
@@ -75,7 +79,7 @@ const SpeedDialPage = () => {
             userFunc={(e) => {
               console.log(e, "4번 커스텀 함수");
             }}
-            iconGroupDirection={"up"}
+            iconGroupDirection={"down"}
             iconWidth={100}
             iconHeight={100}
             switchIconHoverColor={"skyblue"}
@@ -83,6 +87,9 @@ const SpeedDialPage = () => {
             iconHoverRadius={1}
             isToggleSwitchColorStay={false}
           />
+          <h3>- 아이콘의 배경 네모 적용 /</h3>
+          <h3>실행버튼 hover될때만 스타일 적용 /</h3>
+          <h3>실행버튼 회전방향 및 속도 조절</h3>
         </div>
       </Contents>
     </>
@@ -93,12 +100,9 @@ export default SpeedDialPage;
 
 const Background = styled.div`
   .center {
-    position: fixed;
-    top: 5%;
     width: 100%;
-    height: 95vh;
+    height: 90vh;
     display: flex;
-    justify-content: center;
     & > div {
       width: 400px;
       height: 150px;
@@ -112,19 +116,19 @@ const Contents = styled.div`
     position: fixed;
   }
   .cover1 {
-    top: 25%;
+    top: 60%;
     left: 5%;
   }
   .cover2 {
     top: 40%;
-    left: 50%;
+    left: 30%;
   }
   .cover3 {
-    top: 60%;
-    left: 20%;
+    top: 25%;
+    left: 5%;
   }
   .cover4 {
-    top: 80%;
-    left: 80%;
+    top: 5%;
+    left: 50%;
   }
 `;
