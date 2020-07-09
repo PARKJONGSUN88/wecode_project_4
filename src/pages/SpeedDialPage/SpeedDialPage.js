@@ -1,9 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import SpeedDail1 from "./SpeedDial1";
-import SpeedDail2 from "./SpeedDial2";
-import SpeedDail3 from "./SpeedDial3";
-import SpeedDail4 from "./SpeedDial4";
+import SpeedDial from "../../components/SpeedDial/SpeedDial";
+import SwitchIcon1 from "../../components/Icons/SwitchIcon1";
+import SwitchIcon2 from "../../components/Icons/SwitchIcon2";
+import Icon1 from "../../components/Icons/Icon1";
+import Icon2 from "../../components/Icons/Icon2";
+import Icon3 from "../../components/Icons/Icon3";
+import Icon4 from "../../components/Icons/Icon4";
+import Icon5 from "../../components/Icons/Icon5";
+import Icon6 from "../../components/Icons/Icon6";
 
 const SpeedDialPage = () => {
   return (
@@ -24,16 +29,60 @@ const SpeedDialPage = () => {
       </Background>
       <Contents>
         <div className="cover1 cover">
-          <SpeedDail1 />
+          <SpeedDial
+            switchIcon={<SwitchIcon2 />}
+            iconList={[
+              { url: "/1", icon: <Icon1 /> },
+              { url: "/2", icon: <Icon2 /> },
+              { url: "/3", icon: <Icon3 /> },
+            ]}
+            iconGroupDirection={"right"}
+            switchIconHoverColor={"green"}
+            iconHoverColor={"green"}
+            isSwitchIconRotate={false}
+          />
         </div>
         <div className="cover2 cover">
-          <SpeedDail2 />
+          <SpeedDial
+            switchIcon={<SwitchIcon1 />}
+            iconList={[
+              { url: "/1", icon: <Icon1 /> },
+              { url: "/2", icon: <Icon2 /> },
+            ]}
+            iconClickHandler={() => {
+              console.log("2번 컴포넌트 작동중입니다");
+            }}
+            iconGroupDirection={"left"}
+            switchIconHoverColor={"blue"}
+            iconHoverColor={"red"}
+            iconWidth={100}
+            iconHeight={100}
+            iconSpaceBetween={100}
+          />
         </div>
         <div className="cover3 cover">
-          <SpeedDail3 />
+          <SpeedDial />
         </div>
         <div className="cover4 cover">
-          <SpeedDail4 />
+          <SpeedDial
+            switchIcon={<Icon5 />}
+            iconList={[
+              { url: "/3", icon: <Icon3 /> },
+              { url: "/4", icon: <Icon4 /> },
+              { url: "/5", icon: <Icon5 /> },
+              { url: "/6", icon: <Icon6 /> },
+            ]}
+            iconClickHandler={(e) => {
+              console.log(e, "4번 커스텀 함수");
+            }}
+            iconGroupDirection={"up"}
+            iconWidth={100}
+            iconHeight={100}
+            switchIconHoverColor={"skyblue"}
+            switchIconRotateAngle={180}
+            iconHoverRadius={1}
+            isToggleSwitchColorStay={false}
+          />
         </div>
       </Contents>
     </>
@@ -47,11 +96,13 @@ const Background = styled.div`
     position: fixed;
     top: 5%;
     width: 100%;
+    height: 95vh;
     display: flex;
     justify-content: center;
     & > div {
       width: 400px;
       height: 150px;
+      border: 1px solid gray;
     }
   }
 `;
