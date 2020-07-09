@@ -4,7 +4,7 @@
 
 
 
-이동하기: https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/src/components/Rating
+doc: https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/src/components/Rating
 
 
 
