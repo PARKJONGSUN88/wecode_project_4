@@ -4,7 +4,7 @@
 
 
 
-doc: https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/src/components/SpeedDial
+doc: https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/Javascript%2C%20React/src/components/SpeedDial
 
 
 
