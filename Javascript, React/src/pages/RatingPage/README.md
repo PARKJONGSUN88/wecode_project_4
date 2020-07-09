@@ -4,6 +4,8 @@
 
 doc: https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/Javascript%2C%20React/src/components/Rating
 
+<br>
+
 ### 예시
 
 #### 1. default 상태
