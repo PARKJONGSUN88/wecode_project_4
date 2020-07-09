@@ -49,7 +49,7 @@ const SpeedDialPage = () => {
               { url: "/1", icon: <Icon1 /> },
               { url: "/2", icon: <Icon2 /> },
             ]}
-            iconClickHandler={() => {
+            userFunc={() => {
               console.log("2번 컴포넌트 작동중입니다");
             }}
             iconGroupDirection={"left"}
@@ -67,12 +67,12 @@ const SpeedDialPage = () => {
           <SpeedDial
             switchIcon={<Icon5 />}
             iconList={[
-              { url: "/3", icon: <Icon3 /> },
-              { url: "/4", icon: <Icon4 /> },
-              { url: "/5", icon: <Icon5 /> },
-              { url: "/6", icon: <Icon6 /> },
+              { url: "/1", icon: <Icon3 /> },
+              { url: "/2", icon: <Icon4 /> },
+              { url: "/3", icon: <Icon5 /> },
+              { url: "/4", icon: <Icon6 /> },
             ]}
-            iconClickHandler={(e) => {
+            userFunc={(e) => {
               console.log(e, "4번 커스텀 함수");
             }}
             iconGroupDirection={"up"}

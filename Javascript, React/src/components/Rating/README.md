@@ -18,7 +18,7 @@ React로 재사용이 가능한 UI 컴포넌트를 만들고자 한다.
 | pieceWidth       | 50 // (px) // 0 ~                                            | piece의 width값                                              | number  |
 | pieceStyle       | null                                                         | piece에 직접적으로 css를 입힐 때 사용한다. / 예시: pieceStyle={"border: 1px solid black; background-color:skyblue;"} | string  |
 | pickStyle        | null                                                         | pick에 직접적으로 css를 입힐 때 사용한다. / 예시: pickStyle={"border: 1px solid black; background-color:blue;"} | string  |
-| clickHandler     | (click, index) => console.log("click:", click, "index:", index) // clickHandler={} | piece가 클릭될시 실행될 함수 / default로 파라미터는 2개가 제공되며 click파라미터는 해당 piece가 클릭될때마다 변하는 값, index파라미터는 pick된 piece의 값이다. / 보통 Rating된 값은 index값을 보내면 된다. | Func(n) |
+| userFunc         | (click, index) => console.log("click:", click, "index:", index) // userFunc={(e) => history.push(e)} | piece가 클릭될시 실행될 함수 / default로 파라미터는 2개가 제공되며 click파라미터는 해당 piece가 클릭될때마다 변하는 값, index파라미터는 pick된 piece의 값이다. / 보통 Rating된 값은 index값을 보내면 된다. | Func(n) |
 | isHover          | false                                                        | 활성화시 piece에 hover시, pick에 해당되는 스타일이 적용된다. | boolean |
 | hover            | "hover"                                                      | hover시 실행되는 조각 낱개 하나를 말한다. pick과 동일한 스타일이나 별도의 스타일을 지정할 수 있다. pick이 될 스타일을 미리보기 처럼 사용할 수 있다. | any     |
 | hoverStyle       | null                                                         | hover에 직접적으로 css를 입힐 때 사용한다. / 예시: hoverStyle={"border: 1px solid black; background-color:blue;"} | string  |
@@ -50,3 +50,4 @@ React로 재사용이 가능한 UI 컴포넌트를 만들고자 한다.
 
 -  20.07.09 : hover시에도 적용되는 스타일을 미리보기처럼 볼 수 있도록 옵션을 추가했다. 
 - 20.07.09 : 최초 렌더링시 pick될 piece갯수의 초기값을 지정할 수 있게 옵션을 추가했다.
+- 20.07.09 : 사용자가 커스텀할 수 있는 함수명이 겹쳐서 수정하였다.

@@ -27,7 +27,7 @@ const Rating = (props) => {
   const clickHandler = (click) => {
     setPickedPieceIndex(click);
     setHoverPieceIndex(-1);
-    props.clickHandler(click, pickedPieceIndex);
+    props.userFunc(click, pickedPieceIndex);
   };
 
   return (
@@ -105,7 +105,7 @@ Rating.defaultProps = {
   pieceWidth: 50,
   pieceStyle: null,
   pickStyle: null,
-  clickHandler: (click, index) => console.log("click:", click, "index:", index),
+  userFunc: (click, index) => console.log("click:", click, "index:", index),
   isHover: false,
   hover: "hover",
   hoverStyle: null,
@@ -128,6 +128,20 @@ const PieceWrap = styled.div`
   flex-direction: ${(props) => props.direction === "left" && "row-reverse"};
   flex-direction: ${(props) => props.direction === "down" && "column"};
   flex-direction: ${(props) => props.direction === "up" && "column-reverse"};
+  ${(props) => {
+    if (props.pieceStyle !== null) {
+      return css`
+        ${props.pieceStyle}
+      `;
+    }
+  }};
+  ${(props) => {
+    if (props.pickStyle !== null) {
+      return css`
+        ${props.pickStyle}
+      `;
+    }
+  }};
   & > div {
     overflow: hidden;
     height: ${(props) => props.pieceHeight}px;
@@ -138,7 +152,7 @@ const PieceWrap = styled.div`
           ${props.hoverStyle}
         `;
       }
-    }}
+    }};
     & > div {
       height: 100%;
       width: 100%;
@@ -148,7 +162,6 @@ const PieceWrap = styled.div`
       align-items: center;
     }
   }
-
   & > div:nth-child(odd) {
     & > div {
       transform: ${(props) => {
@@ -173,18 +186,4 @@ const PieceWrap = styled.div`
       }};
     }
   }
-  ${(props) => {
-    if (props.pieceStyle !== null) {
-      return css`
-        ${props.pieceStyle}
-      `;
-    }
-  }};
-  ${(props) => {
-    if (props.pickStyle !== null) {
-      return css`
-        ${props.pickStyle}
-      `;
-    }
-  }}
 `;

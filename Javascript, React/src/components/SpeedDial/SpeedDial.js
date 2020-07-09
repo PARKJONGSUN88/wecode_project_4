@@ -6,7 +6,7 @@ const SpeedDial = (props) => {
   const [iconHoverIndex, setIconHoverIndex] = useState(-1);
 
   const iconClickHandler = (e) => {
-    props.iconClickHandler(props.iconList[e].url);
+    props.userFunc(props.iconList[e].url);
     setIsToggle(false);
   };
 
@@ -80,7 +80,7 @@ SpeedDial.defaultProps = {
     { url: "/url1", icon: "icon1" },
     { url: "/url2", icon: "icon2" },
   ],
-  iconClickHandler: (e) => console.log(e),
+  userFunc: (e) => console.log(e),
   iconGroupDirection: "left",
   iconWidth: 50,
   iconHeight: 50,

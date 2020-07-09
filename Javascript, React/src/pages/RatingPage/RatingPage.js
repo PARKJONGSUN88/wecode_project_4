@@ -8,22 +8,31 @@ import Icon5 from "../../components/Icons/Icon5";
 const RatingPage = () => {
   return (
     <Contents>
+      <h1>Rating Page입니다.</h1>
       <div className="cover">
+        <h3>- default 상태</h3>
         <Rating />
       </div>
       <div className="cover">
+        <h3>
+          - pieceStyle 및 pickStyle 스타일 적용, 유저커스텀함수가 적용되어
+          alert이 실행됨
+        </h3>
         <Rating
           pieceStyle={"border: 1px solid black; background-color:skyblue;"}
           pickStyle={"background-color:blue;"}
+          userFunc={(e, x) => alert(e)}
         />
       </div>
       <div className="cover">
+        <h3>- piece 및 pick에 이미지(컴포넌트로)로 적용</h3>
         <Rating
           piece={<Icon1 color={"skyblue"} />}
           pick={<Icon1 color={"blue"} />}
         />
       </div>
       <div className="cover">
+        <h3>- pieceIsHalf 및 pieceStyle, pickStyle가 같이 적용된 상태</h3>
         <Rating
           piece={<Icon2 color={"pink"} />}
           pick={<Icon2 color={"red"} />}
@@ -34,6 +43,7 @@ const RatingPage = () => {
         />
       </div>
       <div className="cover">
+        <h3>- pieceIsHalf 및 pieceStyle, pickStyle가 같이 적용된 상태</h3>
         <Rating
           piece={<Icon2 color={"pink"} />}
           pick={<Icon2 color={"red"} />}
@@ -42,6 +52,7 @@ const RatingPage = () => {
         />
       </div>
       <div className="cover">
+        <h3>- defaultPickCount 값을 추가하여 초기 picked 갯수 설정</h3>
         <Rating
           piece={<Icon5 color={"skyblue"} />}
           pick={<Icon5 color={"blue"} />}
@@ -51,6 +62,7 @@ const RatingPage = () => {
         />
       </div>
       <div className="cover">
+        <h3>- defaultPickCount 값을 추가하여 초기 picked 갯수 설정</h3>
         <Rating
           piece={<Icon5 color={"skyblue"} />}
           pick={<Icon5 color={"blue"} />}
@@ -61,6 +73,7 @@ const RatingPage = () => {
         />
       </div>
       <div className="cover">
+        <h3>- ishover 값을 활성화하여 사용할 경우</h3>
         <Rating
           piece={<Icon5 color={"white"} />}
           pick={<Icon5 color={"blue"} />}
@@ -71,6 +84,7 @@ const RatingPage = () => {
         />
       </div>
       <div className="cover">
+        <h3>- ishover 값을 활성화하여 사용할 경우</h3>
         <Rating
           piece={<Icon5 color={"white"} />}
           pick={<Icon5 color={"blue"} />}
@@ -82,6 +96,7 @@ const RatingPage = () => {
         />
       </div>
       <div className="cover">
+        <h3>- ishover 값을 활성화하여 사용할 경우</h3>
         <Rating
           piece={<Icon5 color={"white"} />}
           pick={<Icon5 color={"blue"} />}
@@ -94,6 +109,7 @@ const RatingPage = () => {
         />
       </div>
       <div className="cover">
+        <h3>- height, width 값 조정으로 size up된 상태</h3>
         <Rating
           piece={<Icon1 color={"pink"} />}
           pick={<Icon1 />}
@@ -104,6 +120,7 @@ const RatingPage = () => {
         />
       </div>
       <div className="cover">
+        <h3>- right방향 사용</h3>
         <Rating
           piece={<Icon2 color={"pink"} />}
           pick={<Icon2 color={"red"} />}
@@ -120,6 +137,7 @@ const RatingPage = () => {
           pieceHeight={50}
           pieceWidth={200}
         />
+        <h3>- up방향 사용</h3>
       </div>
     </Contents>
   );
@@ -132,6 +150,6 @@ const Contents = styled.div`
     margin: 100px 30px;
   }
   .down {
-    margin: 300px 30px;
+    padding: 200px 30px;
   }
 `;
