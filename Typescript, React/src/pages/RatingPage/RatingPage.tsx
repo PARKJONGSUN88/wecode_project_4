@@ -4,7 +4,7 @@ import Rating from '../../components/Rating/Rating';
 import Icon1 from '../../components/Icons/Icon1';
 import Icon2 from '../../components/Icons/Icon2';
 import Icon5 from '../../components/Icons/Icon5';
-import Icon7 from '../../components/Icons/Icon7';
+import Icon8 from '../../components/Icons/Icon8';
 
 const RatingPage: React.FC = () => {
   return (
@@ -27,7 +27,10 @@ const RatingPage: React.FC = () => {
       </div>
       <div className="cover">
         <h3>- piece 및 pick에 이미지(컴포넌트로)로 적용</h3>
-        <Rating piece={<Icon7 />} pick={<Icon1 color={'blue'} />} />
+        <Rating
+          piece={<Icon1 color={'skyblue'} />}
+          pick={<Icon1 color={'blue'} />}
+        />
       </div>
       <div className="cover">
         <h3>- pieceIsHalf 및 pieceStyle, pickStyle가 같이 적용된 상태</h3>
@@ -68,6 +71,18 @@ const RatingPage: React.FC = () => {
           pieceCount={10}
           pieceIsHalf={true}
           pieceStyle={'background-color:gray;'}
+        />
+      </div>
+      <div className="cover">
+        <h3>- pick에 이미지 태그(HTML이미지)로 적용된 상태</h3>
+        <Rating
+          piece={''}
+          pick={<Icon8 />}
+          pieceIsHalf={true}
+          defaultPickCount={3}
+          pieceCount={10}
+          pieceStyle={'background-color:skyblue;'}
+          pickStyle={'background-color:skyblue;'}
         />
       </div>
       <div className="cover">

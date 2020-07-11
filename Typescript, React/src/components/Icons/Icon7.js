@@ -1,8 +1,19 @@
 import React from "react";
-import img from "./test.png";
+import { IoIosAddCircle } from "react-icons/io";
+import { IconContext } from "react-icons";
 
 const Icon7 = () => {
-  return <img src={img} alt="test" width="50px" />;
+  return (
+    <IconContext.Provider
+      value={{
+        size: "100%",
+        color: "green",
+        style: { cursor: "pointer" },
+      }}
+    >
+      <IoIosAddCircle />
+    </IconContext.Provider>
+  );
 };
 
 export default Icon7;

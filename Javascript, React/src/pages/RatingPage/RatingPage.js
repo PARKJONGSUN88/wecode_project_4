@@ -4,7 +4,7 @@ import Rating from "../../components/Rating/Rating";
 import Icon1 from "../../components/Icons/Icon1";
 import Icon2 from "../../components/Icons/Icon2";
 import Icon5 from "../../components/Icons/Icon5";
-import Icon7 from "../../components/Icons/Icon7";
+import Icon8 from "../../components/Icons/Icon8";
 
 const RatingPage = () => {
   return (
@@ -77,7 +77,7 @@ const RatingPage = () => {
         <h3>- pick에 이미지 태그(HTML이미지)로 적용된 상태</h3>
         <Rating
           piece={""}
-          pick={<Icon7 />}
+          pick={<Icon8 />}
           pieceIsHalf={true}
           defaultPickCount={3}
           pieceCount={10}
