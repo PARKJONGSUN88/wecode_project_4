@@ -1,15 +1,15 @@
-import React from "react";
-import { withRouter } from "react-router-dom";
-import styled from "styled-components";
+import React from 'react';
+import { withRouter } from 'react-router-dom';
+import styled from 'styled-components';
 
 const IndexPage = (props) => {
   return (
     <>
       <h2>안녕하세요. JS UI page입니다. 타입스크립트 버전입니다.</h2>
-      <Content onClick={() => props.history.push("/speeddial")}>
+      <Content onClick={() => props.history.push('/speeddial')}>
         Speed Dial UI page로 이동
       </Content>
-      <Content onClick={() => props.history.push("/rating")}>
+      <Content onClick={() => props.history.push('/rating')}>
         Rating UI page로 이동
       </Content>
     </>
