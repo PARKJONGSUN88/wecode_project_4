@@ -1,19 +1,19 @@
 import React from "react";
-import { IoIosHand } from "react-icons/io";
+import { IoIosAddCircle } from "react-icons/io";
 import { IconContext } from "react-icons";
 
-const SwitchIcon2 = () => {
+const Icon7 = () => {
   return (
     <IconContext.Provider
       value={{
         size: "100%",
-        color: "blue",
+        color: "green",
         style: { cursor: "pointer" },
       }}
     >
-      <IoIosHand />
+      <IoIosAddCircle />
     </IconContext.Provider>
   );
 };
 
-export default SwitchIcon2;
+export default Icon7;

@@ -4,6 +4,7 @@ import Rating from "../../components/Rating/Rating";
 import Icon1 from "../../components/Icons/Icon1";
 import Icon2 from "../../components/Icons/Icon2";
 import Icon5 from "../../components/Icons/Icon5";
+import Icon7 from "../../components/Icons/Icon7";
 
 const RatingPage = () => {
   return (
@@ -70,6 +71,18 @@ const RatingPage = () => {
           pieceCount={10}
           pieceIsHalf={true}
           pieceStyle={"background-color:gray;"}
+        />
+      </div>
+      <div className="cover">
+        <h3>- pick에 이미지 태그(HTML이미지)로 적용된 상태</h3>
+        <Rating
+          piece={""}
+          pick={<Icon7 />}
+          pieceIsHalf={true}
+          defaultPickCount={3}
+          pieceCount={10}
+          pieceStyle={"background-color:skyblue;"}
+          pickStyle={"background-color:skyblue;"}
         />
       </div>
       <div className="cover">
