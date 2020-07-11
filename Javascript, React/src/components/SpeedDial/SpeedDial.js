@@ -10,10 +10,6 @@ const SpeedDial = (props) => {
     setIsToggle(false);
   };
 
-  const iconHoverHandler = (e) => {
-    setIconHoverIndex(e);
-  };
-
   return (
     <Contents
       iconGroupDirection={props.iconGroupDirection}
@@ -61,7 +57,7 @@ const SpeedDial = (props) => {
             iconWidth={props.iconWidth}
             iconHeight={props.iconHeight}
             iconSpaceBetween={props.iconSpaceBetween}
-            onMouseEnter={() => iconHoverHandler(index)}
+            onMouseEnter={() => setIconHoverIndex(index)}
             onClick={() => iconClickHandler(index)}
           >
             {item.icon}
@@ -178,14 +174,14 @@ const IconGroupWrap = styled.div`
     props.iconGroupDirection === "left" && "row-reverse"};
   flex-direction: ${(props) => props.iconGroupDirection === "right" && "row"};
   &
-    > i:nth-child(${(props) =>
+    > div:nth-child(${(props) =>
         props.isIconHoverColor && props.iconHoverIndex + 1}) {
     background-color: ${(props) => props.iconHoverColor};
     border-radius: ${(props) => props.iconHoverRadius}px;
   }
 `;
 
-const IconCover = styled.i`
+const IconCover = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
