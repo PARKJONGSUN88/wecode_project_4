@@ -2,7 +2,8 @@
 
 해당 페이지에서는 Rating component를 import하여 다양한 예시를 보여주는 페이지입니다.
 
-doc: https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/Typescript%2C%20React/src/components/Rating
+doc: https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/Typescript_React/src/components/Rating
+
 
 ### 예시
 
