@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Text } from "react-native";
 import styled from "styled-components/native";
-import Rating from "../components/Rating/Rating";
+import Rating from "../../components/Rating/Rating";
 
 const RatingPage = () => {
   return (

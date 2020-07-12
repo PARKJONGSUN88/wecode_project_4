@@ -2,7 +2,7 @@ import * as React from "react";
 import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import RatingPage from "./src/pages/RatingPage";
+import RatingPage from "./src/pages/RatingPage/RatingPage";
 import SpeedDial from "./src/components/SpeedDial/SpeedDial";
 
 const SpeedDialScreen = () => {
