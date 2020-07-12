@@ -2,7 +2,7 @@
 
 해당 페이지에서는 Speed Dial component를 import하여 다양한 예시를 보여주는 페이지입니다.
 
-doc: https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/Typescript%2C%20React/src/components/SpeedDial
+doc: https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/Typescript_React/src/components/SpeedDial
 
 <br>
 
