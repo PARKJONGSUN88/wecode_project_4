@@ -13,6 +13,8 @@ javascript + react : https://github.com/PARKJONGSUN88/wecode_project_4/tree/mast
 
 typescript + react : https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/Typescript_React/src/pages/SpeedDialPage
 
+typescript + react-native : https://github.com/PARKJONGSUN88/wecode_project_4/tree/master/Typescript_React-Native/src/pages/SpeedDialPage
+
 <img width="1280" style="border:black 1px solid" alt="2" src="https://user-images.githubusercontent.com/50945715/86909149-9d5fc600-c152-11ea-8464-aa909e56d8d0.gif">
 
 <img width="1280" style="border:black 1px solid;" alt="3" src="https://user-images.githubusercontent.com/50945715/86909150-9d5fc600-c152-11ea-93a8-49a3289093a0.gif">
