@@ -95,6 +95,7 @@ SpeedDial.defaultProps = {
 };
 
 const Contents = styled.div`
+  position: relative;
   display: flex;
   flex-direction: ${(props) =>
     props.iconGroupDirection === "up" && "column-reverse"};

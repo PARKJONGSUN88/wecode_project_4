@@ -3,12 +3,12 @@ import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import RatingPage from "./src/pages/RatingPage/RatingPage";
-import SpeedDial from "./src/components/SpeedDial/SpeedDial";
+import SpeedDialPage from "./src/pages/SpeedDialPage/SpeedDialPage";
 
 const SpeedDialScreen = () => {
   return (
     <View style={styles.pageStyle}>
-      <SpeedDial />
+      <SpeedDialPage />
     </View>
   );
 };
@@ -28,7 +28,7 @@ const HomeScreen = ({ navigation }) => {
         <Text style={styles.button}>Home Screen</Text>
       </View>
       <View style={styles.contentsStyle}>
-        <TouchableOpacity onPress={() => navigation.navigate("SpeedDial")}>
+        <TouchableOpacity onPress={() => navigation.navigate("SpeedDialPage")}>
           <Text style={styles.button}>Speed Dial page 바로가기</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate("RatingPage")}>
@@ -46,7 +46,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="SpeedDial" component={SpeedDialScreen} />
+        <Stack.Screen name="SpeedDialPage" component={SpeedDialScreen} />
         <Stack.Screen name="RatingPage" component={RatingScreen} />
       </Stack.Navigator>
     </NavigationContainer>

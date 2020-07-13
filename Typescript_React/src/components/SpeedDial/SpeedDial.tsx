@@ -163,6 +163,7 @@ const SpeedDial: React.FC<SpeedDialType> = ({
 export default SpeedDial;
 
 const Contents = styled.div<ContentsType>`
+  position: relative;
   display: flex;
   flex-direction: ${(props) =>
     props.iconGroupDirection === 'up' && 'column-reverse'};

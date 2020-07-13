@@ -1,9 +1,9 @@
 import React from "react";
 import { Image, StyleSheet } from "react-native";
 
-const img = require("./star2.png");
+const img = require("../Icons/html.png");
 
-const Icon2 = () => {
+const SwitchButton = () => {
   return (
     <>
       <Image style={styles.iconStyle} source={img} />
@@ -11,7 +11,7 @@ const Icon2 = () => {
   );
 };
 
-export default Icon2;
+export default SwitchButton;
 
 const styles = StyleSheet.create({
   iconStyle: {

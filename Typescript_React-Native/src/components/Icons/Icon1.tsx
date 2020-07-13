@@ -1,10 +1,12 @@
 import React from "react";
-import { Image, StyleSheet, View } from "react-native";
+import { Image, StyleSheet } from "react-native";
+
+const img = require("./star1.png");
 
 const Icon1 = () => {
   return (
     <>
-      <Image style={styles.iconStyle} source={require("./html.png")} />
+      <Image style={styles.iconStyle} source={img} />
     </>
   );
 };
@@ -13,11 +15,10 @@ export default Icon1;
 
 const styles = StyleSheet.create({
   iconStyle: {
-    width: "100%",
-    height: "100%",
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "blue",
+    width: "100%",
+    height: "100%",
   },
 });
