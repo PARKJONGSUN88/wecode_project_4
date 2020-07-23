@@ -1,7 +1,3 @@
-### TEST!!!
-
-<img width="1280" style="border:black 1px solid" alt="2" src="https://user-images.githubusercontent.com/50945715/88040507-f59bbc80-cb83-11ea-9b1b-2e897189c1a4.gif">
-
 
 ## React Component - js UI
 
