@@ -1,17 +1,17 @@
 import React from "react";
 import { Image, StyleSheet } from "react-native";
 
-const img = require("../Icons/html.png");
+const img = require("./img/twitter.png");
 
-const Icon = () => {
+const twitter = () => {
   return (
     <>
-      <Image style={styles.iconStyle} source={img} />
+      <Image style={styles.iconStyle} resizeMode="contain" source={img} />
     </>
   );
 };
 
-export default Icon;
+export default twitter;
 
 const styles = StyleSheet.create({
   iconStyle: {

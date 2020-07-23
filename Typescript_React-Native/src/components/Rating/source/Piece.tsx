@@ -2,14 +2,13 @@ import * as React from "react";
 import { Image, StyleSheet } from "react-native";
 import styled, { css } from "styled-components/native";
 
-const img = require("../Icons/star1.png");
+const img = require("./star1.png");
 
 interface PieceType {
   pieceWidth?: number;
   pieceHeight?: number;
   pieceIsHalf?: boolean;
   direction?: "up" | "down" | "left" | "right";
-  pieceStyle?: string | null;
   IsEven?: boolean;
 }
 
@@ -23,16 +22,14 @@ interface ImgCoverType {
   pieceHeight: number;
   pieceIsHalf: boolean;
   direction: "up" | "down" | "left" | "right";
-  pieceStyle: string | null;
   IsEven: boolean;
 }
 
 const Piece: React.FC<PieceType> = ({
-  pieceWidth = 50,
-  pieceHeight = 100,
+  pieceWidth = 25,
+  pieceHeight = 50,
   pieceIsHalf = false,
   direction = "right",
-  pieceStyle = null,
   IsEven = false,
 }) => {
   return (
@@ -42,7 +39,6 @@ const Piece: React.FC<PieceType> = ({
         pieceHeight={pieceHeight}
         pieceIsHalf={pieceIsHalf}
         direction={direction}
-        pieceStyle={pieceStyle}
         IsEven={IsEven}
       >
         <Image style={styles.iconStyle} resizeMode="contain" source={img} />
@@ -108,13 +104,6 @@ const ImgCover = styled.View<ImgCoverType>`
           `;
         }
       }
-    }
-  }}
-  ${(props) => {
-    if (props.pieceStyle) {
-      return css`
-        ${props.pieceStyle}
-      `;
     }
   }}
 `;

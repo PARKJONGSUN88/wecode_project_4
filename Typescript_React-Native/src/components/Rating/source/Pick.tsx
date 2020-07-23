@@ -2,7 +2,7 @@ import * as React from "react";
 import { Image, StyleSheet } from "react-native";
 import styled, { css } from "styled-components/native";
 
-const img = require("../Icons/star2.png");
+const img = require("./star2.png");
 
 interface PickType {
   pieceWidth?: number;
@@ -28,8 +28,8 @@ interface ImgCoverType {
 }
 
 const Pick: React.FC<PickType> = ({
-  pieceWidth = 50,
-  pieceHeight = 100,
+  pieceWidth = 25,
+  pieceHeight = 50,
   pieceIsHalf = false,
   direction = "right",
   pickStyle = null,

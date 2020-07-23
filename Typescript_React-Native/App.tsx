@@ -1,5 +1,11 @@
 import * as React from "react";
-import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
+import {
+  TouchableOpacity,
+  View,
+  Text,
+  StyleSheet,
+  SafeAreaView,
+} from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import RatingPage from "./src/pages/RatingPage/RatingPage";
@@ -23,9 +29,9 @@ const RatingScreen = () => {
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <View style={styles.bodyStyle}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.titleStyle}>
-        <Text style={styles.button}>Home Screen</Text>
+        <Text style={styles.button}>UI 컴포넌트 모음</Text>
       </View>
       <View style={styles.contentsStyle}>
         <TouchableOpacity onPress={() => navigation.navigate("SpeedDialPage")}>
@@ -35,7 +41,10 @@ const HomeScreen = ({ navigation }) => {
           <Text style={styles.button}>Rating page 바로가기</Text>
         </TouchableOpacity>
       </View>
-    </View>
+      <View style={styles.titleStyle}>
+        <Text style={styles.button}>footer</Text>
+      </View>
+    </SafeAreaView>
   );
 };
 
@@ -61,28 +70,30 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  bodyStyle: {
+  container: {
+    flex: 1,
     alignItems: "center",
     justifyContent: "center",
   },
   titleStyle: {
     alignItems: "center",
     justifyContent: "center",
-    width: 200,
-    height: 100,
+    width: "100%",
+    height: "10%",
     backgroundColor: "skyblue",
   },
   contentsStyle: {
     alignItems: "center",
     justifyContent: "center",
-    width: 400,
-    height: 200,
+    width: "100%",
+    height: "80%",
     backgroundColor: "yellow",
   },
   button: {
     color: "black",
     backgroundColor: "pink",
-    marginTop: 50,
+    marginTop: 20,
+    marginBottom: 20,
     fontSize: 20,
   },
 });

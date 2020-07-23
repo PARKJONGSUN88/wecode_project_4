@@ -2,8 +2,8 @@ import * as React from "react";
 import { useState } from "react";
 import { TouchableOpacity } from "react-native";
 import styled, { css } from "styled-components/native";
-import Piece from "./Piece";
-import Pick from "./Pick";
+import Piece from "./source/Piece";
+import Pick from "./source/Pick";
 
 interface RatingType {
   pieceWidth?: number;
@@ -21,10 +21,12 @@ interface RatingType {
   userFunc?: Function;
 }
 
-interface WarpType {
+interface WrapType {
   pieceWidth: number;
   pieceHeight: number;
   pieceCount: number;
+  pieceStyle: string | null;
+  direction: "up" | "down" | "left" | "right";
 }
 
 interface PieceWrapType {
@@ -32,8 +34,8 @@ interface PieceWrapType {
 }
 
 const Rating: React.FC<RatingType> = ({
-  pieceWidth = 50,
-  pieceHeight = 100,
+  pieceWidth = 25,
+  pieceHeight = 50,
   pieceIsHalf = false,
   direction = "right",
   pieceStyle = null,
@@ -48,7 +50,6 @@ const Rating: React.FC<RatingType> = ({
       pieceHeight={pieceHeight}
       pieceIsHalf={pieceIsHalf}
       direction={direction}
-      pieceStyle={pieceStyle}
       IsEven={false}
     />
   ),
@@ -58,7 +59,6 @@ const Rating: React.FC<RatingType> = ({
       pieceHeight={pieceHeight}
       pieceIsHalf={pieceIsHalf}
       direction={direction}
-      pieceStyle={pieceStyle}
       IsEven={true}
     />
   ),
@@ -113,16 +113,18 @@ const Rating: React.FC<RatingType> = ({
   };
 
   return (
-    <Warp
+    <Wrap
       pieceWidth={pieceWidth}
       pieceHeight={pieceHeight}
       pieceCount={pieceCount}
+      pieceStyle={pieceStyle}
+      direction={direction}
     >
       <PieceWrap direction={direction}>
         {pieceCountArray.map((item, index) => (
           <TouchableOpacity
             key={index}
-            activeOpacity={0.8}
+            activeOpacity={1}
             onPress={() => clickHandler(index)}
           >
             {item}
@@ -133,23 +135,41 @@ const Rating: React.FC<RatingType> = ({
         {pickCountArray.map((item, index) => (
           <TouchableOpacity
             key={index}
-            activeOpacity={0.8}
+            activeOpacity={1}
             onPress={() => clickHandler(index)}
           >
             {item}
           </TouchableOpacity>
         ))}
       </PieceWrap>
-    </Warp>
+    </Wrap>
   );
 };
 
 export default Rating;
 
-const Warp = styled.View<WarpType>`
+const Wrap = styled.View<WrapType>`
   position: relative;
-  width: ${(props) => props.pieceWidth * props.pieceCount};
-  height: ${(props) => props.pieceHeight};
+  ${(props) => {
+    if (props.direction === "down" || props.direction === "up") {
+      return css`
+        width: ${props.pieceWidth};
+        height: ${props.pieceHeight * props.pieceCount};
+      `;
+    } else {
+      return css`
+        width: ${props.pieceWidth * props.pieceCount};
+        height: ${props.pieceHeight};
+      `;
+    }
+  }}
+  ${(props) => {
+    if (props.pieceStyle) {
+      return css`
+        ${props.pieceStyle}
+      `;
+    }
+  }};
 `;
 
 const PieceWrap = styled.View<PieceWrapType>`

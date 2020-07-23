@@ -1,17 +1,17 @@
 import React from "react";
 import { Image, StyleSheet } from "react-native";
 
-const img = require("./star2.png");
+const img = require("./email.png");
 
-const Icon2 = () => {
+const Icon = () => {
   return (
     <>
-      <Image style={styles.iconStyle} source={img} />
+      <Image style={styles.iconStyle} resizeMode="contain" source={img} />
     </>
   );
 };
 
-export default Icon2;
+export default Icon;
 
 const styles = StyleSheet.create({
   iconStyle: {

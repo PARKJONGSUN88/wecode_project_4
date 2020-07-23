@@ -1,17 +1,17 @@
 import React from "react";
 import { Image, StyleSheet } from "react-native";
 
-const img = require("../Icons/html.png");
+const img = require("./img/instagram.png");
 
-const SwitchButton = () => {
+const instagram = () => {
   return (
     <>
-      <Image style={styles.iconStyle} source={img} />
+      <Image style={styles.iconStyle} resizeMode="contain" source={img} />
     </>
   );
 };
 
-export default SwitchButton;
+export default instagram;
 
 const styles = StyleSheet.create({
   iconStyle: {

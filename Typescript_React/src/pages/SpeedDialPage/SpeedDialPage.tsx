@@ -42,7 +42,7 @@ const SpeedDialPage: React.FC = () => {
               { url: '/3', icon: <Icon3 /> },
             ]}
             iconGroupDirection={'right'}
-            switchIconHoverColor={'green'}
+            switchIconHoverColor={'blue'}
             iconHoverColor={'green'}
             isSwitchIconRotate={false}
           />

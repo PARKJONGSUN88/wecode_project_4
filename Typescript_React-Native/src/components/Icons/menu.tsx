@@ -1,17 +1,17 @@
 import React from "react";
 import { Image, StyleSheet } from "react-native";
 
-const img = require("./star1.png");
+const img = require("./img/menu.png");
 
-const Icon1 = () => {
+const menu = () => {
   return (
     <>
-      <Image style={styles.iconStyle} source={img} />
+      <Image style={styles.iconStyle} resizeMode="contain" source={img} />
     </>
   );
 };
 
-export default Icon1;
+export default menu;
 
 const styles = StyleSheet.create({
   iconStyle: {
