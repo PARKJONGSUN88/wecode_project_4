@@ -164,7 +164,7 @@ const IconGroupWrap = styled.div`
     props.isToggle
       ? (props.iconHeight + props.iconSpaceBetween) * props.length
       : 0}px;
-  transition: ${(props) => (props.isToggle ? "max-height" : "max-height")};
+  transition: ${(props) => props.isToggle && "max-height"};
   transition-delay: ${(props) =>
     props.isToggle === false && props.length * props.toggleSpeed}ms;
   display: flex;
