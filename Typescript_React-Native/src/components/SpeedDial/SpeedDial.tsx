@@ -87,7 +87,6 @@ const SwitchButtonCover = styled.TouchableOpacity<SwitchButtonCoverType>`
   }}
 `;
 
-
 const IconGroup = styled.View<IconGroupType>`
   position: absolute;
   ${(props) => {
